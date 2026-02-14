@@ -35,12 +35,5 @@ public class Course extends TimeStampedEntity {
     @Column(name="end_time", nullable=false)
     private LocalDateTime endTime;
     @Column(name="capacity", nullable=false)
-    private int capacity;
-    @Column(name="created_at", nullable=false)
-    private LocalDateTime createdAt;
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-    }
-    
+    private int capacity; 
 }

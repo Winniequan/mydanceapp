@@ -40,17 +40,4 @@ public class Booking {
     @Column(name = "number_of_guests", nullable = false)
     @Builder.Default
     private int numberOfGuests = 1;
-    @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt;
-    @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updatedAt;
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-    }
-    @PreUpdate
-    protected void onUpdate() {
-        this.updatedAt = LocalDateTime.now();
-    }
-
 }

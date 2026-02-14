@@ -25,12 +25,5 @@ private String passwordHash;
     @Column(name = "role", nullable=false)
     @Enumerated(EnumType.STRING)
     private Role role;
-    @Column(name = "created_at", nullable=false)
-    private LocalDateTime createdAt;
-    // change the createdAt to current time when the user is created
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-    }
     
 }
