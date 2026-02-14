@@ -1,7 +1,5 @@
 package com.mydanceapp.mydanceapp.booking;
 
-import java.time.LocalDateTime;
-
 import com.mydanceapp.mydanceapp.course.Course;
 import com.mydanceapp.mydanceapp.user.User;
 
